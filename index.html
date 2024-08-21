@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farazul Hoda - Cyborg Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-image: radial-gradient(circle, #0d0d0d, #020202, #0a0a0a);
+        }
+        header {
+            background: linear-gradient(145deg, #00ffcc, #004f4f);
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 900px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 15px 5px #00ffcc;
+        }
+        header h1 {
+            margin: 0;
+            color: #ff00ff;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 0;
+            color: #e6e6e6;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            overflow: hidden;
+        }
+        .cyborg {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 0px 20px 10px #004f4f;
+            border: 2px solid #00ffcc;
+        }
+        h2 {
+            color: #ff00ff;
+            border-bottom: 2px solid #00ffcc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            text-transform: uppercase;
+        }
+        p, li {
+            color: #e6e6e6;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li:before {
+            content: ">";
+            color: #00ffcc;
+            padding-right: 8px;
+        }
+        .social-links a {
+            color: #ff00ff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-size: 1.2em;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #00ffcc;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #ff00ff;
+            color: #000;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #d400d4;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(145deg, #00ffcc, #004f4f);
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 5px #00ffcc;
+        }
+        footer p {
+            margin: 0;
+            color: #e6e6e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Farazul Hoda</h1>
+        <p>Cybersecurity Specialist | Developer | Innovator</p>
+    </header>
+
+    <div class="container">
+        <!-- Bio Section -->
+        <section class="bio cyborg">
+            <h2>About Me</h2>
+            <p>Hello! I'm Farazul Hoda, a Cybersecurity Specialist with a strong background in information security, software development, and cloud computing. With a Master's in Computer Science from Illinois Institute of Technology, I specialize in identifying and mitigating security risks, developing secure software, and managing cloud infrastructure. My passion lies in safeguarding digital assets and creating innovative solutions to challenging problems.</p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-experience cyborg">
+            <h2>Work Experience</h2>
+            <p><strong>Security Analyst</strong> - Abyz IT & Call Services Private Limited (May 2021 - June 2022)</p>
+            <ul>
+                <li>Extensively used Splunk, Wireshark, and CrowdStrike Falcon for log management, network analysis, and endpoint detection.</li>
+                <li>Integrated security tools to create a comprehensive security strategy, leading to improved threat detection and response.</li>
+                <li>Created dashboards, set up alerts, and conducted threat analysis to enhance the security posture.</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects cyborg">
+            <h2>Projects</h2>
+            <p><strong>Caesar Cipher App (iOS)</strong></p>
+            <p>Developed a SwiftUI-based app that allows users to encrypt and decrypt text using the Caesar Cipher algorithm. The app features a user-friendly interface, custom animations, and real-time toggling between encryption and decryption modes.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact cyborg">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me for collaboration, job opportunities, or any questions you may have!</p>
+            <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+
+        <!-- Social Media Links -->
+        <section class="social-links cyborg">
+            <h2>Connect with Me</h2>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+            <a href="https://twitter.com/your-profile" target="_blank">Twitter</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Farazul Hoda. All rights reserved.</p>
+    </footer>
+</body>
+</html>
